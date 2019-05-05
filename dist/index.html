@@ -5,19 +5,352 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Scalar test</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+	<header class="header">
+
+	
+
+	    <div class="header__navigation-box">
+
+	        <!--top-side-->
+
+	        <div class="header__navigation -top">
+
+	            <a href="" class="header__logo">Quantum</a>
+
+	
+
+	            <div class="header__search-box">
+
+	                <input type="search" placeholder="Search goods" class="header__search-field">
+
+	                <!--<label class="header__categories">
+
+	                    <select class="header__select-category">
+
+	                        &lt;!&ndash;<option>Category</option>&ndash;&gt;
+
+	                        <option>Phones</option>
+
+	                         <option>Parts</option>
+
+	                        <option>Headsets</option>
+
+	                        <option>Other</option>
+
+	                    </select>
+
+	                </label>-->
+
+	                <select class="header__select-category custom-select">
+
+	                    <option data-display="Category">Phones</option>
+
+	                    <option>Parts</option>
+
+	                    <option>Headsets</option>
+
+	                    <option>Other</option>
+
+	                </select>
+
+	
+
+	                <button class="header__search-button">
+
+	                    <img src="./img/search.svg" alt="search">
+
+	                </button>
+
+	            </div>
+
+	
+
+	
+
+	            <div class="header__user-interaction">
+
+	                <div class="header__button">
+
+	                    <div class="header__button-image -shopcart">
+
+	                        <img src="./img/shopcart.svg" alt="shopcart">
+
+	                        <span></span>
+
+	                    </div>
+
+	                    <span class="header__button-name">2 Items</span>
+
+	                </div>
+
+	                <div class="header__button">
+
+	                    <div class="header__button-image -wishlist">
+
+	                        <img src="./img/wishlist.svg" alt="wishlist">
+
+	                    </div>
+
+	                    <span class="header__button-name">Wish List</span>
+
+	                </div>
+
+	                <div class="header__button">
+
+	                    <div class="header__button-image -user">
+
+	                        <img src="./img/user.svg" alt="user">
+
+	                    </div>
+
+	                    <span class="header__button-name" id="sing">Sing in</span>
+
+	                </div>
+
+	            </div>
+
+	
+
+	        </div>
+
+	
+
+	
+
+	        <!--bottom-side-->
+
+	        <div class="header__navigation -bottom">
+
+	            <div class="container">
+
+	                <div class="header__additional-menu">
+
+	                    <!--1-->
+
+	                    <div class="header__additional-item -all-list">
+
+	                        <div class="header__additional-item-image">
+
+	                            <img src="./img/menu.svg" alt="menu">
+
+	                        </div>
+
+	                        <p class="header__additional-item-name">All Categories</p>
+
+	                    </div>
+
+	                    <!--2-->
+
+	                    <div class="header__additional-item -links">
+
+	                        <ul class="header__links-list">
+
+	                            <li class="header__link-box">
+
+	                                <a href="">Super Deals</a>
+
+	                            </li>
+
+	                            <li class="header__link-box">
+
+	                                <a href="">Featured Brands</a>
+
+	                            </li>
+
+	                            <li class="header__link-box">
+
+	                                <a href="">Collections</a>
+
+	                            </li>
+
+	                            <li class="header__link-box">
+
+	                                <a href="">Bestselling</a>
+
+	                            </li>
+
+	                        </ul>
+
+	                    </div>
+
+	                    <!--3-->
+
+	                    <div class="header__additional-item -settings">
+
+	                        <div class="header__set-list">
+
+	                            <select class="header__settings-list custom-select">
+
+	                                <option data-display="Help">Questions</option>
+
+	                                <option>FAQ</option>
+
+	                                <option>Support</option>
+
+	                            </select>
+
+	                        </div>
+
+	                        <div class="header__set-list -valute">
+
+	                            <select class="header__settings-list custom-select">
+
+	                                <option data-display="USD">USD</option>
+
+	                                <option>UAH</option>
+
+	                                <option>RUB</option>
+
+	                            </select>
+
+	                        </div>
+
+	                        <div class="header__set-list">
+
+	                            <select class="header__settings-list custom-select">
+
+	                                <option data-display="Language">ENG</option>
+
+	                                <option>RU</option>
+
+	                                <option>UA</option>
+
+	                            </select>
+
+	                        </div>
+
+	                    </div>
+
+	                </div>
+
+	            </div>
+
+	        </div>
+
+	    </div>
+
+	
+
+	    <div class="container">
+
+	    <div class="header__bottom-items-box">
+
+	        <!--left-->
+
+	        <div class="header__breadcrumbs">
+
+	            <a href="">Main</a>
+
+	            <a href="">Mobile phones</a>
+
+	            <a href="">Apple</a>
+
+	            <a href="">Apple iPhone 7, 128 GB</a>
+
+	        </div>
+
+	        <!--right-->
+
+	        <div class="header__share">
+
+	            <span class="header__share-tip">Share:</span>
+
+	            <div class="header__social">
+
+	                <div class="header__social-icon">
+
+	                    <img src="./img/facebook.svg" alt="facebook-share">
+
+	                </div>
+
+	                <p class="header__social-counter">45</p>
+
+	            </div>
+
+	            <div class="header__social">
+
+	                <div class="header__social-icon">
+
+	                    <img src="./img/twitter.svg" alt="twitter-share">
+
+	                </div>
+
+	                <p class="header__social-counter">12</p>
+
+	            </div>
+
+	        </div>
+
+	
+
+	    </div>
+
+	    </div>
+
+	</header>
+
+	
+
+	<!--popup-->
+
+	
+
+	<div class="sing-popup">
+
+	
+
+	    <form action="" class="sing-form" id="singUpForm">
+
+	        <div class="sing-form__banner">
+
+	            <h2>Sing in</h2>
+
+	        </div>
+
+	        <label class="sing-form__input-container">
+
+	            <input type="text" name="name" placeholder="Name" required="" class="sing-form__input-field">
+
+	        </label>
+
+	        <label class="sing-form__input-container">
+
+	            <input type="email" name="email" placeholder="Email" required="" class="sing-form__input-field">
+
+	        </label>
+
+	        <label class="sing-form__input-container">
+
+	            <input type="pass" required="" placeholder="Password" class="sing-form__input-field">
+
+	        </label>
+
+	        <input type="submit" value="Submit" class="sing-form__send-button">
+
+	    </form>
+
+	
+
+	</div>
+
+	
+
+	
+
+	
 	<section class="footer">
 	    <div class="container">
-	        <span class="footer__copy">Serge. Copyright 2019</span>
 	    </div>
 	</section>
 
 	<script src="js/libs/jquery-3.2.1.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/libs/jquery.nice-select.min.js"></script>
 </body>
 </html>
