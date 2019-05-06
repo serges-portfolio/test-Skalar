@@ -18,7 +18,9 @@
 
 	        <!--top-side-->
 
-	        <div class="header__navigation -top">
+	        <div class="header__navigation -top container">
+
+	
 
 	            <a href="" class="header__logo">Quantum</a>
 
@@ -27,24 +29,6 @@
 	            <div class="header__search-box">
 
 	                <input type="search" placeholder="Search goods" class="header__search-field">
-
-	                <!--<label class="header__categories">
-
-	                    <select class="header__select-category">
-
-	                        &lt;!&ndash;<option>Category</option>&ndash;&gt;
-
-	                        <option>Phones</option>
-
-	                         <option>Parts</option>
-
-	                        <option>Headsets</option>
-
-	                        <option>Other</option>
-
-	                    </select>
-
-	                </label>-->
 
 	                <select class="header__select-category custom-select">
 
@@ -100,7 +84,7 @@
 
 	                </div>
 
-	                <div class="header__button">
+	                <div class="header__button" id="sing">
 
 	                    <div class="header__button-image -user">
 
@@ -108,7 +92,7 @@
 
 	                    </div>
 
-	                    <span class="header__button-name" id="sing">Sing in</span>
+	                    <span class="header__button-name">Sing in</span>
 
 	                </div>
 
@@ -141,6 +125,38 @@
 	                        </div>
 
 	                        <p class="header__additional-item-name">All Categories</p>
+
+	                        <div class="header__hidden-list">
+
+	                            <a href="">Cellphones</a>
+
+	                            <a href="">Accessories</a>
+
+	                            <a href="">Computers</a>
+
+	                            <a href="">Smart watches</a>
+
+	                            <a href="">TV</a>
+
+	                            <a href="">Headphones</a>
+
+	                            <a href="">Other</a>
+
+	                            <div class="header__popular-links"><!--from header__links-list-->
+
+	                                <p class="header__popular-links-title">Popular</p>
+
+	                                <a href="">Super Deals</a>
+
+	                                <a href="">Featured Brands</a>
+
+	                                <a href="">Collections</a>
+
+	                                <a href="">Bestselling</a>
+
+	                            </div>
+
+	                        </div>
 
 	                    </div>
 
@@ -238,57 +254,97 @@
 
 	    <div class="container">
 
-	    <div class="header__bottom-items-box">
+	        <div class="header__bottom-items-box">
 
-	        <!--left-->
+	            <!--left-->
 
-	        <div class="header__breadcrumbs">
+	            <div class="header__breadcrumbs">
 
-	            <a href="">Main</a>
+	                <div class="header__crumb-box">
 
-	            <a href="">Mobile phones</a>
+	                    <a href="">Main</a>
 
-	            <a href="">Apple</a>
+	                    <svg xmlns="http://www.w3.org/2000/svg" class="header__crumb-arrow" width="8" height="5"
 
-	            <a href="">Apple iPhone 7, 128 GB</a>
+	                         viewBox="0 0 8 5">
 
-	        </div>
+	                        <path fill="#cfcfcf" d="M3.998 5L8 2.5V.104L3.998 2.62 0 0v2.5z"/>
 
-	        <!--right-->
-
-	        <div class="header__share">
-
-	            <span class="header__share-tip">Share:</span>
-
-	            <div class="header__social">
-
-	                <div class="header__social-icon">
-
-	                    <img src="./img/facebook.svg" alt="facebook-share">
+	                    </svg>
 
 	                </div>
 
-	                <p class="header__social-counter">45</p>
+	                <div class="header__crumb-box">
 
-	            </div>
+	                    <a href="">Mobile phones</a>
 
-	            <div class="header__social">
+	                    <svg xmlns="http://www.w3.org/2000/svg" class="header__crumb-arrow" width="8" height="5"
 
-	                <div class="header__social-icon">
+	                         viewBox="0 0 8 5">
 
-	                    <img src="./img/twitter.svg" alt="twitter-share">
+	                        <path fill="#cfcfcf" d="M3.998 5L8 2.5V.104L3.998 2.62 0 0v2.5z"/>
+
+	                    </svg>
 
 	                </div>
 
-	                <p class="header__social-counter">12</p>
+	                <div class="header__crumb-box">
+
+	                    <a href="">Apple</a>
+
+	                    <svg xmlns="http://www.w3.org/2000/svg" class="header__crumb-arrow" width="8" height="5"
+
+	                         viewBox="0 0 8 5">
+
+	                        <path fill="#cfcfcf" d="M3.998 5L8 2.5V.104L3.998 2.62 0 0v2.5z"/>
+
+	                    </svg>
+
+	                </div>
+
+	                <div class="header__crumb-box">
+
+	                    <a href="">Apple iPhone 7, 128 GB</a>
+
+	                </div>
 
 	            </div>
 
-	        </div>
+	            <!--right-->
+
+	            <div class="header__share">
+
+	                <span class="header__share-tip">Share:</span>
+
+	                <div class="header__social">
+
+	                    <div class="header__social-icon -facebook">
+
+	                        <img src="./img/facebook.svg" alt="facebook-share">
+
+	                    </div>
+
+	                    <p class="header__social-counter">45</p>
+
+	                </div>
+
+	                <div class="header__social">
+
+	                    <div class="header__social-icon -twitter">
+
+	                        <img src="./img/twitter.svg" alt="twitter-share">
+
+	                    </div>
+
+	                    <p class="header__social-counter">12</p>
+
+	                </div>
+
+	            </div>
 
 	
 
-	    </div>
+	        </div>
 
 	    </div>
 
