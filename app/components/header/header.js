@@ -22,15 +22,6 @@ $(document).ready(function() {
 var generalList = document.querySelector(".-all-list");
 var hiddenList = document.querySelector(".header__hidden-list");
 
-generalList.onclick = function (closed) {
+generalList.onclick = function () {
     hiddenList.classList.toggle("header__active-list");
-    /*if (closed.target !== generalList) {
-        hiddenList.classList.remove('header__active-list');
-    };*/
 };
-
-// if (hiddenList.classList.contains("header__active-list") ) {
-//         body.onclick = function () {
-//             hiddenList.classList.remove('header__active-list');
-//         };
-//     }

@@ -50,7 +50,7 @@ $arrow_color: $gray !default;
     width: 10px;
     height: 6px;
     position: absolute;
-    z-index: 2;
+    z-index: auto;
     content: "";
     background: url("../img/arrow.svg") no-repeat;
     transform: rotateX(0deg);

@@ -1,0 +1,377 @@
+<section class="smart">
+    <div class="container">
+        <h1 class="smart__title">Smartphones</h1>
+
+        <div class="smart__general-container">
+            <!--left-side-->
+            <div class="smart__filter-box">
+                <!--PRICE-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Price</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box smart__range-box -range-box">
+                            <div id="slider-range"></div>
+
+                            <label for="min-value" class="smart__price-box">
+                                <input type="text" id="min-value" readonly class="smart__range-value">
+                            </label>
+                            <p class="smart__price-divider">—</p>
+                            <label for="max-value" class="smart__price-box">
+                                <input type="text" id="max-value" readonly class="smart__range-value -right-value">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--BRANDS-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Brands</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box -brands-box">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Apple</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Sony</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color" checked><i></i>
+                                <span class="smart__check-name">Asus</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">LG</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Lenovo</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Meizu</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Xiaomi</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">HTC</span>
+                            </label>
+
+                            <div class="smart__show-more -other-brands-disable">
+
+                                <label class="smart__check-item">
+                                    <input type="checkbox" name="color"><i></i>
+                                    <span class="smart__check-name">Samsung</span>
+                                </label>
+                                <label class="smart__check-item">
+                                    <input type="checkbox" name="color"><i></i>
+                                    <span class="smart__check-name">Motorola</span>
+                                </label>
+
+                                <span class="smart__more-button">
+                                    +<span>show more</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--COLOR-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Color</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box -colors-box">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Ivory</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Deep Grey</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Coffee</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Red</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Pink</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Yellow</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Green</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Black</span>
+                            </label>
+
+                            <div class="smart__show-more -other-checkboxes-disable">
+
+                                <label class="smart__check-item">
+                                    <input type="checkbox" name="color"><i></i>
+                                    <span class="smart__check-name">Indigo</span>
+                                </label>
+                                <label class="smart__check-item">
+                                    <input type="checkbox" name="color"><i></i>
+                                    <span class="smart__check-name">Gold</span>
+                                </label>
+
+                                <span class="smart__more-button">
+                                    +<span>show more</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--BODY WEIGHT-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Body Weight</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box ">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">>100g</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">>200g</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CPU Cores-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">CPU Cores</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box ">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">2</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">4</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">4 + 4</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">6</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">8</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">10</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CPU TYPE-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">CPU Type</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box ">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Qualcomm</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">MTK</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Screen Size-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Screen Size</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box -screen-size-box">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">1440 x 2960</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">1440 x 2880</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">3840 x 2160</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">1125 x 2436</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">1080 x 1920</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">720×1280</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Operation System-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Operation System</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box ">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Android</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">IOS</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">Other</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Cellular-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">Cellular</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box ">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">2G</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">3G</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">4G</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--RAM-->
+                <div class="smart__filter -rotated">
+                    <div class="smart__filter-head">
+                        <p class="smart__filter-name">RAM</p>
+                        <div class="smart__filter-arrow">
+                            <img src="./img/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="smart__hidden-filter">
+                        <div class="smart__hidden-box ">
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">2 Gb</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">3 Gb</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">4 Gb</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">6 Gb</span>
+                            </label>
+                            <label class="smart__check-item">
+                                <input type="checkbox" name="color"><i></i>
+                                <span class="smart__check-name">>6 Gb</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+                                    <!--right-side-->
+            <div class="smart__phones-box">
+
+            </div>
+        </div>
+    </div>
+</section>

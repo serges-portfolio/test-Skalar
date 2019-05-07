@@ -1,0 +1,245 @@
+.smart {
+  &__title {
+    display: block;
+    position: relative;
+    margin: 90px auto 112px;
+    text-align: center;
+    color: #666666;
+    font-size: 30px;
+    font-weight: 400;
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 68px;
+      height: 2px;
+      background-color: #1875f0;
+      top: 81px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__general-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  /*______LEFT-SIDE______*/
+  &__filter-box {
+    display: block;
+    width: 100%;
+    max-width: 255px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+  &__filter {
+    display: block;
+    max-height: 59px;
+    overflow: hidden;
+    //padding: 23px 26px 20px;
+    border-bottom: 2px solid $border-color;
+  }
+  &__filter-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 20px 20px;
+  }
+  &__filter-name {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__filter-arrow {
+    display: block;
+    transition: 0.4s;
+    cursor: pointer;
+    img {
+      width: 10px;
+    }
+  }
+
+  &__hidden-filter {
+    display: block;
+    transition: 1s;
+  }
+  /*when filter is open*/
+  &__opened-filter {
+    max-height: 400px;
+    transition: 1s;
+  }
+  &__hidden-box {
+    padding: 12px 20px 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    &.-range-box {
+      display: block;
+      padding-bottom: 28px;
+    }
+    &.-brands-box {
+      padding-bottom: 37px;
+    }
+    &.-colors-box {
+      padding-bottom: 37px;
+    }
+    &.-screen-size-box {
+      flex-direction: column;
+      .smart__check-item {
+        max-width: 120px;
+      }
+    }
+  }
+  /*active arrow-button*/
+  .smart__opened-filter.-rotated .smart__filter-arrow {
+    transform: rotate(180deg);
+    transition: 0.4s;
+  }
+
+  /*__________RANGE_*/
+  &__range-box {
+    #slider-range {
+      width: 215px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $border-color;
+      .ui-state-default {
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        width: 16px;
+        height: 16px;
+        border: 0;
+        border-radius: 50%;
+        background-color: $active-color;
+      }
+      .ui-slider-range {
+        background-color: $active-color;
+
+      }
+    }
+  }
+  &__price-box {
+    position: relative;
+    &:before {
+      display: block;
+      position: absolute;
+      width: 9px;
+      height: 2px;
+      color: #666666;
+      content: "$";
+      font-size: 12px;
+      font-weight: 500;
+      top: 3px;
+      left: 15px;
+    }
+  }
+  &__range-value {
+    display: inline-block;
+    width: 100%;
+    max-width: 90px;
+    margin-top: 33px;
+    padding-left: 24px;
+    border-radius: 4px;
+    border: 2px solid $border-color;
+    background-color: #ffffff;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  &__price-divider {
+    display: inline-block;
+    width: 100%;
+    max-width: 28px;
+    text-align: center;
+  }
+
+  /*_____CHECKBOX_____*/
+  &__check-item {
+    display: flex;
+    width: 100%;
+    max-width: 100px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  &__check-item input {
+    display: none;
+  }
+  &__check-item i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  &__check-item input[type="checkbox"] + i {
+    border-radius: 4px;
+    border: 2px solid $border-color;
+  }
+  &__check-item i:before {
+    content: url("../img/done.svg");
+    top: 1px;
+    left: 3px;
+    position: absolute;
+    border-radius: 4px;
+    transform: scale(0);
+    transition: 0.4s;
+  }
+  &__check-item input[type="checkbox"] + i:before {
+    border-radius: 4px;
+  }
+  &__check-item input[type="checkbox"]:checked + i:before {
+    content: url("../img/done.svg");
+    transform: scale(1);
+  }
+  &__check-item input[type="checkbox"]:checked + i {
+    background-color: $active-color;
+    border-color: $active-color;
+  }
+  &__check-name {
+    margin-left: 20px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /*______show-more-button_*/
+  &__show-more {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__more-button {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: 27px;
+    left: 26px;
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+    span {
+      margin-left: 26px;
+    }
+  }
+  .smart__show-more.-other-checkboxes-disable .smart__check-item {
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+
+
+  /*______________RIGHT-SIDE________*/
+  &__phones-box {
+    display: block;
+    width: 100%;
+    max-width: 825px;
+  }
+}
