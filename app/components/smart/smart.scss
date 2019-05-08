@@ -4,7 +4,7 @@
     position: relative;
     margin: 90px auto 112px;
     text-align: center;
-    color: #666666;
+    color: $main-color;
     font-size: 30px;
     font-weight: 400;
     &:after {
@@ -46,7 +46,7 @@
     padding: 23px 20px 20px;
   }
   &__filter-name {
-    color: #666666;
+    color: $main-color;
     font-size: 14px;
     font-weight: 500;
   }
@@ -127,7 +127,7 @@
       position: absolute;
       width: 9px;
       height: 2px;
-      color: #666666;
+      color: $main-color;
       content: "$";
       font-size: 12px;
       font-weight: 500;
@@ -144,7 +144,7 @@
     border-radius: 4px;
     border: 2px solid $border-color;
     background-color: #ffffff;
-    color: #666666;
+    color: $main-color;
     font-size: 12px;
     font-weight: 500;
     line-height: 50px;
@@ -200,7 +200,7 @@
   }
   &__check-name {
     margin-left: 20px;
-    color: #666666;
+    color: $main-color;
     font-size: 12px;
     font-weight: 500;
   }
@@ -231,7 +231,7 @@
   .smart__show-more.-other-checkboxes-disable .smart__check-item {
     position: absolute;
     opacity: 0;
-    transition: 0.4s;
+    //transition: 0.4s;
   }
 
 
@@ -362,7 +362,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    color: #666666;
+    color: $main-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -397,7 +397,7 @@
   }
   &__product-price {
     display: block;
-    color: #666666;
+    color: $main-color;
     font-size: 16px;
     font-weight: 900;
     line-height: 20px;
@@ -456,7 +456,7 @@
   }
   &__current-page {
     display: block;
-    color: #666666;
+    color: $main-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 50px;

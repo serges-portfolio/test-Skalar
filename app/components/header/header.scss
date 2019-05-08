@@ -226,8 +226,6 @@
     transform: translateY(-10px);
     a {
       display: block;
-      //height: 0;
-
       background-color: #ffffff;
       padding: 6px 0 6px 15px;
       text-decoration: none;
@@ -317,7 +315,7 @@
       color: #cccccc;
     }
     a:last-child {
-      color: #666666;
+      color: $main-color;
     }
   }
   &__crumb-arrow {

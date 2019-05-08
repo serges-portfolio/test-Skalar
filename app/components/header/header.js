@@ -12,7 +12,6 @@ window.onclick = function(event) {
     }
 };
 
-
 //select-customization init
 $(document).ready(function() {
     $('.custom-select').niceSelect();
