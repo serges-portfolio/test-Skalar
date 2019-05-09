@@ -579,9 +579,10 @@
     &__sort-name-box {
       max-width: 230px;
       margin-left: 5px;
+      font-size: 12px;
     }
     &__view-type {
-      max-width: 70px;
+      max-width: 60px;
     }
     &__type {
       display: none;
@@ -599,6 +600,12 @@
     }
     &__pages-navigation {
       padding: 0 10px;
+    }
+    &__go-to-page.-previous {
+      padding-left: 20px;
+    }
+    &__go-to-page.-next {
+      padding-right: 20px;
     }
   }
 }
