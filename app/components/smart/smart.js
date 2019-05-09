@@ -55,3 +55,13 @@ function tabToggle(elements, className) {
 tabToggle(tabChange, 'smart__active-sort');
 tabToggle(sortOrientation, 'smart__type-image-active');
 
+//mobile-filter visibility
+var filterButton = document.querySelector(".smart__filter-button");
+var hiddenFilter = document.querySelector(".smart__filter-box");
+
+filterButton.addEventListener("click", function () {
+    hiddenFilter.classList.toggle("show-filter");
+});
+/*hiddenFilter.target.addEventListener("click", function () {
+    hiddenFilter.classList.remove("show-filter");
+})*/
