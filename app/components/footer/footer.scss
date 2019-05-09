@@ -252,7 +252,7 @@
 @media all and (max-width: 479px) {
   .footer {
     &__info-links {
-      margin: 10px auto !important;
+      margin: 10px auto;
     }
     &__rights {
       justify-content: space-around;

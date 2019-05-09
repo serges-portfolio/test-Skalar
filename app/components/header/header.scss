@@ -576,6 +576,9 @@
 }
 @media all and (max-width: 479px) {
   .header {
+    &__search-field {
+      padding: 15px 4px 16px;
+    }
     &__additional-item-image {
       margin-right: 0;
       margin-left: 15px;
